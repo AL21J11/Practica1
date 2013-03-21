@@ -34,7 +34,7 @@ document.addEventListener("deviceready",function (){
 	
 
    $('#izquierda').swipeleft(function(){
-   navigator.notificaion.confirm('¿que desea hacer?;function(option){
+   navigator.notificaion.confirm('¿que desea hacer?';function(option){
   switch(option){
     case 1:
       navigator.notification.beep(1)
