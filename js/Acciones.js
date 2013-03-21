@@ -29,12 +29,17 @@ document.addEventListener("deviceready",function (){
 	}  
  
 
-  $('#derecha').swiperinght(function(){
+ $('#derecha').swiperinght(function(){
 	 navigator.notification.alert("deslizo a la derecha",function(){},"practica1","aceptar");
 	
 
-    $('#izquierda').swipeleft(function(){
-   navigator.notificaion.confirm('¿que desea hacer?';function(option){
+  
+
+}); 
+   }, false);
+
+ $('#izquierda').swipeleft(function(){
+   navigator.notificaion.confirm('¿que desea hacer?', function(option){
   switch(option){
     case 1:
       navigator.notification.beep(1)
@@ -46,3 +51,4 @@ document.addEventListener("deviceready",function (){
  }); //function swipe
 });
 });
+
