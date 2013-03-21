@@ -34,7 +34,7 @@ document.addEventListener("deviceready",function (){
 	
 
    $('#izquierda').swipeleft(function(){
-   navigator.notificaion.confirm('¿que desea hacer?;function(option){
+   navigator.notificaion.confirm('ï¿½que desea hacer?;function(option){
   switch(option){
     case 1:
       navigator.notification.beep(1)
@@ -48,5 +48,16 @@ document.addEventListener("deviceready",function (){
 }); 
    }, false);
 
+ $('#izquierda').swipeleft(function(){
+   navigator.notificaion.confirm('Â¿que desea hacer?', function(option){
+  switch(option){
+    case 1:
+      navigator.notification.beep(1)
+   break;
+    case 2:
+      navigator.notification.vibrate(500);
+  } //switch
+ }, "practica 1","beep,vibrate,cancelar"); //function confirm
+ }); //function swipe
 });
   });
